@@ -20,7 +20,7 @@ Gnuplot.exe must be located on file path:
 Data, Model, Layer define the class objects used for the main file
 NR08112016.cpp
 
-Included files:
+    Included files:
     -NR08112016.cpp
     -NRFunctions.cpp
     -NRFunctions.h
@@ -30,8 +30,6 @@ Included files:
     -Model.h
     -Layer.cpp
     -Layer.h
-
-
 
     Modelling Assumptions:
     -substrate and aqueous layer assumed
