@@ -17,6 +17,9 @@ requireing the BOOST library.
 Gnuplot.exe must be located on file path:
 "C:/Program Files/gnuplot/bin/"
 
+Data, Model, Layer define the class objects used for the main file
+NR08112016.cpp
+
 Included files:
     -NR08112016.cpp
     -NRFunctions.cpp
@@ -28,13 +31,12 @@ Included files:
     -Layer.cpp
     -Layer.h
 
-Data, Model, Layer define the class objects used for the main file
-NR08112016.cpp
+
 
 Modelling Assumptions:
     -substrate and aqueous layer assumed
     -constant angle of incidence at each layer
-    -asuming measurements are taken at one angle of incidence
+    -assuming measurements are taken at one angle of incidence
     -non-complex refraction angle
     -classical wavelike description of neutron
     -thermal neutrons
