@@ -18,10 +18,10 @@ Gnuplot.exe must be located on file path:
 "C:/Program Files/gnuplot/bin/"
 
 Data, Model, Layer define the class objects used for the main file
-NR08112016.cpp
+main.cpp
 
     Included files:
-    -NR08112016.cpp
+    -main.cpp
     -NRFunctions.cpp
     -NRFunctions.h
     -Data.cpp
