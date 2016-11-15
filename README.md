@@ -2,7 +2,7 @@
 Sean Ruane + Connah Johnson's Neutron Reflectivity modelling software, name TBD.
 
 
-### Doesn't run as of 10/11/2016 ###
+### Doesn't run as of 15/11/2016 ###
 
 Neutron Reflectivity programme
 
@@ -47,4 +47,12 @@ main.cpp
     -comma separated file on entry with three data columns: X, Y, Error in Y
     -data in format of Q or wavelength, Reflecivity, and error in Reflecitivity
     -data file is located within the project directory
+    
+    
+Change Log
+-10/11/2016 Original upload of files
+-15/11/2016 Fixed the NRFunction.h and NRFunctions.cpp blank files, 
+moved object definitions and altered object interactions with class functions
+-
+
 
