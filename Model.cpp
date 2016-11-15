@@ -10,7 +10,7 @@
 
 // setter methods
 
-void Model::SetModel(unsigned int _NoL, unsigned int NoPL, bool _IsOil, string _OutFilename)
+void MODEL::SetModel(unsigned int _NoL, unsigned int _NoPL, bool _IsOil)
 {
 	M_NoL = _NoL;
 	M_NoPL = _NoPL;
@@ -19,28 +19,28 @@ void Model::SetModel(unsigned int _NoL, unsigned int NoPL, bool _IsOil, string _
 
 }
 
-void Model::SetOutFilename(string _OutFilename)
+void MODEL::SetOutFilename(std::string _OutFilename)
 {
-	M_outFilename = _OutFilename;
+	M_OutFilename = _OutFilename;
 }
 // getter methods
 
-unsigned int Model::GetNoL()
+unsigned int MODEL::GetNoL()
 {
 	return M_NoL;
 }
 
-unsigned int Model::GetNoPL()
+unsigned int MODEL::GetNoPL()
 {
 	return M_NoPL;
 }
 
-bool Model::GetIsOil()
+bool MODEL::GetIsOil()
 {
 	return M_IsOil;
 }
 
-string Model::GetOutFilename()
+std::string MODEL::GetOutFilename()
 {
-	return M_outFilename;
+	return M_OutFilename;
 }

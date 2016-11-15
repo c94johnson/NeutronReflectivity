@@ -49,21 +49,21 @@ using namespace std;
 
 int main()
 {
+    //define objects of classes
+    DATA Data;
+    MODEL Model;
 
 	//------------------------------------------------------------------//
 	//							Input Data 								//
 	//------------------------------------------------------------------//
 
-	// number of data points NoP, read data vector
-	unsigned int Nop;
-	vector< vector<double> > inData;
-
 	cout<<"Please enter the name of the data file including the file extension. "<<endl;
     string InFileName;
     cin>>InFileName;
 
-    // readFile takes in address of the inData vector and updates values
-	NoP = readFile(inData, InFileName);
+    vector< vector<double> > inData; // pass by reference
+    // readFile takes in address of the inData vector and updates values, NoP is the number of data points
+	unsigned int NoP = readFile(inData, InFileName);
 
     cout<<"Please enter the angle of incidence in degrees: "<<endl;
     double AoI;
@@ -72,7 +72,7 @@ int main()
     bool dataType;
     char choice;
     while(choice != Q||W)
-    {
+    {   // while choice isn't Q or wavelength
     	cout<<"Is the data in [Q] or [W]avelength form? [Q/W] "<<endl;
     	cin>>choice;
     };
@@ -91,11 +91,10 @@ int main()
 
 
 	NumberOfLayers();
-	vector <Layer> Layers;
+	vector <LAYER> Layers;
 	DetermineProperties(Layers);
-	// now have the numebr of layers and the properties of each layer are
+	// now have the number of layers and the properties of each layer are
 	// store in a vector of the layer class. Size of vector Layers is NoL.
-
 
 	//------------------------------------------------------------------//
 	//						   Execute Method 							//
@@ -116,7 +115,7 @@ int main()
     };
 
 */
-	MatrixMethod();
+	MatrixMethod(Model, Data, Layers);
 	// here the data fpor the model is stored in Data class object
 
 

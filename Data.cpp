@@ -13,7 +13,7 @@
 // setter methods
 
 
-void Data::SetData(std::vector< std::vector<double> >& _inData, unsigned int _NoP, std::string _filename, bool _dataType, double _AoI)
+void DATA::SetData(std::vector< std::vector<double> >& _inData, unsigned int _NoP, std::string _filename, bool _dataType, double _AoI)
 {
 	D_inData = _inData;
 	D_NoP = _NoP;
@@ -22,7 +22,7 @@ void Data::SetData(std::vector< std::vector<double> >& _inData, unsigned int _No
 	D_AoI = _AoI;
 }
 
-void Data::SetModelData(std::vector< std::vector<double> >& _modelData)
+void DATA::SetModelData(std::vector< std::vector<double> >& _modelData)
 {
 	D_modelData = _modelData;
 
@@ -41,33 +41,33 @@ void Data::SetWData(std::vector <double>& _WData)
 */
 // getter methods
 
-std::string Data::GetFilename()
+std::string DATA::GetFilename()
 {
 	return D_filename;
 };
 
 // is this sending the vector object or the reference address of ???
-std::vector< std::vector< double > > Data::GetInData()
+std::vector< std::vector< double > > DATA::GetInData()
 {
 	return D_inData;
 };
 
-unsigned int Data::GetNoP()
+unsigned int DATA::GetNoP()
 {
 	return D_NoP;
 };
 
-bool Data::GetDataType()
+bool DATA::GetDataType()
 {
 	return D_dataType;
 };
 
-double Data::GetAoI()
+double DATA::GetAoI()
 {
 	return D_AoI;
 };
 
-std::vector< std::vector< double > > Data::GetModelData()
+std::vector< std::vector< double > > DATA::GetModelData()
 {
 	return D_modelData;
 };

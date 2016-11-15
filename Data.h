@@ -11,7 +11,7 @@
 #ifndef DATA_H
 #define DATA_H
 
-class Data
+class DATA
 {
 private:
 
@@ -32,18 +32,18 @@ private:
 
 public:
 
-	GetFilename();
-	GetInData();
-	GetNoP();
-	GetDataType();
-	GetAoI();
-	GetModelData();
+	std::string GetFilename();
+	std::vector< std::vector< double > > GetInData();
+	unsigned int GetNoP();
+	bool GetDataType();
+	double GetAoI();
+	std::vector< std::vector< double > > GetModelData();
 	//GetQData();
 	//GetWData();
 
 
-	SetData(std::vector< std::vector<double> >& _inData, unsigned int _NoP, std::string _fileName, bool _dataType, double _AoI);
-	SetModelData(std::vector< std::vector<double> >& _modelData);
+	void SetData(std::vector< std::vector<double> >& _inData, unsigned int _NoP, std::string _filename, bool _dataType, double _AoI);
+	void SetModelData(std::vector< std::vector<double> >& _modelData);
 	//SetQData(std::vector <double>& _QData);
 	//SetWData(std::vector <double>& _WData);
 

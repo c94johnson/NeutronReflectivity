@@ -12,7 +12,7 @@
 
 // setter methods
 
-void Layer::SetMatrixElements(double _A, double _B, double _C, double _D, double _E, double _F, double _G, double _H)
+void LAYER::SetMatrixElements(std::vector <double> _A, std::vector <double> _B, std::vector <double> _C, std::vector <double> _D, std::vector <double> _E, std::vector <double> _F, std::vector <double> _G, std::vector <double> _H)
 {
 	L_A = _A;
 	L_B = _B;
@@ -23,8 +23,8 @@ void Layer::SetMatrixElements(double _A, double _B, double _C, double _D, double
 	L_G = _G;
 	L_H = _H;
 }
-	
-void Layer::SetLayerProperties(double _Nb, double _NbA, double _rough, double _thickness)
+
+void LAYER::SetLayerProperties(double _Nb, double _NbA, double _rough, double _thickness)
 {
 	L_Nb = _Nb;
 	L_NbA = _NbA;
@@ -32,7 +32,7 @@ void Layer::SetLayerProperties(double _Nb, double _NbA, double _rough, double _t
 	L_thickness = _thickness;
 }
 
-void Layer::SetCumulativeElements(double _CA, double _CB, double _CC, double _CD, double _CE, double _CF, double _CG, double _CH)
+void LAYER::SetCumulativeElements(std::vector <double> _CA, std::vector <double> _CB, std::vector <double> _CC, std::vector <double> _CD, std::vector <double> _CE, std::vector <double> _CF, std::vector <double> _CG, std::vector <double> _CH)
 {
 	L_CA = _CA;
 	L_CB = _CB;
@@ -45,7 +45,7 @@ void Layer::SetCumulativeElements(double _CA, double _CB, double _CC, double _CD
 }
 
 
-void Layer::SetLayerType(string _type)
+void LAYER::SetLayerType(std::string _type)
 {
 	L_type = _type;
 }
@@ -53,107 +53,107 @@ void Layer::SetLayerType(string _type)
 // getter methods
 
 
-std::vector <double> Layer::GetA()
+std::vector <double> LAYER::GetA()
 {
 	return L_A;
 }
 
-std::vector <double> Layer::GetB()
+std::vector <double> LAYER::GetB()
 {
 	return L_B;
 }
 
-std::vector <double> Layer::GetC()
+std::vector <double> LAYER::GetC()
 {
 	return L_C;
 }
 
-std::vector <double> Layer::GetD()
+std::vector <double> LAYER::GetD()
 {
 	return L_D;
 }
 
-std::vector <double> Layer::GetE()
+std::vector <double> LAYER::GetE()
 {
 	return L_E;
 }
 
-std::vector <double> Layer::GetF()
+std::vector <double> LAYER::GetF()
 {
 	return L_F;
 }
 
-std::vector <double> Layer::GetG()
+std::vector <double> LAYER::GetG()
 {
 	return L_G;
 }
 
-std::vector <double> Layer::GetH()
+std::vector <double> LAYER::GetH()
 {
 	return L_H;
 }
 
-std::vector <double> Layer::GetCA()
+std::vector <double> LAYER::GetCA()
 {
 	return L_CA;
 }
 
-std::vector <double> Layer::GetCB()
+std::vector <double> LAYER::GetCB()
 {
 	return L_CB;
 }
 
-std::vector <double> Layer::GetCC()
+std::vector <double> LAYER::GetCC()
 {
 	return L_CC;
 }
 
-std::vector <double> Layer::GetCD()
+std::vector <double> LAYER::GetCD()
 {
 	return L_CD;
 }
 
-std::vector <double> Layer::GetCE()
+std::vector <double> LAYER::GetCE()
 {
 	return L_CE;
 }
 
-std::vector <double> Layer::GetCF()
+std::vector <double> LAYER::GetCF()
 {
 	return L_CF;
 }
 
-std::vector <double> Layer::GetCG()
+std::vector <double> LAYER::GetCG()
 {
 	return L_CG;
 }
 
-std::vector <double> Layer::GetCH()
+std::vector <double> LAYER::GetCH()
 {
 	return L_CH;
 }
 
-double Layer::GetNb()
+double LAYER::GetNb()
 {
 	return L_Nb;
 }
 
-double Layer::GetNbA()
+double LAYER::GetNbA()
 {
 	return L_NbA;
 }
 
-double Layer::GetRough()
+double LAYER::GetRough()
 {
 	return L_rough;
 }
 
-double LAyer::GetThickness()
+double LAYER::GetThickness()
 {
 	return L_thickness;
 }
 
-string Layer::GetLAyerType()
+std::string LAYER::GetLayerType()
 {
 	return L_type;
 }
